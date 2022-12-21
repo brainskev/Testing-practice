@@ -1,5 +1,5 @@
 const stringLength = require('./stringLength');
-const reverseString = require('./reverseString');
+
 
 test('Throws an error for strings shorter than 1 character', () => {
     expect(() => stringLength('').toThrow('string must be atleast 1 character long'));
@@ -16,8 +16,5 @@ test('Returns the correct string length for valid strings', () => {
     expect(stringLength('h')).toBe(1);
 });
 
-test('reverseString function reverses a string', () => {
-    expect(reverseString('Hello World')).toBe('dlroW olleH');
-});
 
 
